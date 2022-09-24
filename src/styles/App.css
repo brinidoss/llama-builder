@@ -1,0 +1,115 @@
+.App {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto;
+  height: 100vh;
+}
+
+.Header {
+  background-color: lavender;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.Body {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-row-start: 2;
+  grid-row-end: 6;
+}
+
+.CreatorPanel {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: lightcoral;
+  border: solid coral 1px;
+}
+
+.DisplayPanel {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  background-color: lightseagreen;
+  border: solid 1px seagreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: -100;
+  
+}
+
+.Llama {
+  /* position: absolute; */
+  height: 400px;
+  z-index: -5;
+  display: grid;
+  grid-template: 1fr / 1fr;
+  place-items: center;
+  width: fit-content;
+  height: fit-content;
+}
+
+.Llama > * {
+  grid-column: 1 /1;
+  grid-row: 1 /1;
+}
+
+.Background {
+  /* position: relative; */
+  z-index: 0;
+}
+
+.background_image {
+  z-index: 1;
+}
+
+.Neck {
+  position: relative;
+  z-index: 3;
+}
+
+.neck_image {
+  z-index: 3;
+}
+
+.Hair {
+  /* position: relative; */
+  z-index: 7;
+}
+
+.Ears {
+  position: relative;
+  z-index: 4;
+}
+
+.Eyes {
+  /* position: relative; */
+  z-index: 8;
+}
+
+.Leg {
+  /* position: relative; */
+  z-index: 3;
+}
+
+.Mouth {
+  /* position: relative; */
+  z-index: 5;
+}
+
+.Nose {
+  z-index: 5
+}
+.Accessory {
+  /* position: relative; */
+  z-index: 9;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+}
