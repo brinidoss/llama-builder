@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-function Part() {
+export interface Props {
+  part: string;
+  selectPart: () => void;
+}
+
+function Part({part, selectPart}: Props) {
   return (
-    <div></div>
+    <button className="Part" id={part} onClick={selectPart} >{part}</button>
   )
 }
 
-export default Part
+export default Part;

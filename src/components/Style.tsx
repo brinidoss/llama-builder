@@ -1,6 +1,12 @@
-function Style() {
+
+  export interface Props {
+    style: string;
+  }
+
+function Style({style}: Props) {
+
   return (
-    <div className="Style"></div>
+    <button className="Style">{style}</button>
   )
 }
 

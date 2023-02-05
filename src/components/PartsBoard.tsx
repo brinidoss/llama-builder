@@ -1,13 +1,18 @@
 import PartsList from "./PartsList";
 
-function PartsBoard() {
+export interface Props {
+  partsArray: string[];
+  selectPart:(part: string) => void;
+}
+
+function PartsBoard({partsArray, selectPart}: Props) {
   return (
     <div className="PartsBoard">
       <div id="partsheader">
         <p>What would you like to style?</p>
       </div>
       <div id="partsContainer">
-        <PartsList />
+        <PartsList partsArray={partsArray} selectPart={selectPart}/>
       </div>
     </div>
   )

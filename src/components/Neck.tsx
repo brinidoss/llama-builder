@@ -11,4 +11,4 @@ function Neck() {
   )
 }
 
-export default Neck
+export default Neck;
