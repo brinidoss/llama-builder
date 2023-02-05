@@ -1,13 +1,11 @@
-import glasses from '../images/accessories/glasses.png';
-import earrings from '../images/accessories/earrings.png';
-import flower from '../images/accessories/flower.png';
-import headphone from '../images/accessories/headphone.png';
+export interface Props {
+  accessory: string;
+}
 
-
-function Accessory() {
+function Accessory({accessory}: Props) {
   return (
     <div className="Accessory">
-      <img className="accessory_image" src={glasses} alt="accessory" />
+      <img className="accessory_image" src={accessory} alt="accessory" />
     </div>
   )
 }

@@ -8,7 +8,7 @@ export interface Props {
 function PartsBoard({partsArray, selectPart}: Props) {
   return (
     <div className="PartsBoard">
-      <div id="partsheader">
+      <div className="header" id="partsheader">
         <p>What would you like to style?</p>
       </div>
       <div id="partsContainer">

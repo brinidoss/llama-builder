@@ -5,14 +5,14 @@ export interface Props {
   stylesArray: string[];
   partsArray: string[];
   selectPart: (part:string) => void;
+  selectStyle: (style:string) => void;
 }
 
-function CreatorPanel({stylesArray,partsArray,selectPart}: Props) {
-  //const stylesArray: string[] = ["foo", "bar"];
+function CreatorPanel({stylesArray,partsArray,selectPart,selectStyle}: Props) {
   return (
     <div className="CreatorPanel">
       <PartsBoard partsArray={partsArray} selectPart={selectPart}/>
-      <StylesBoard stylesArray={stylesArray}/>
+      <StylesBoard stylesArray={stylesArray} selectStyle={selectStyle} />
     </div>
   )
 }

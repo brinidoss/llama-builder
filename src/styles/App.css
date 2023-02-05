@@ -17,7 +17,7 @@ h1 {
 
 .Body {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
   grid-row-start: 2;
   grid-row-end: 6;
 }
@@ -25,27 +25,77 @@ h1 {
 /* creator panel */
 
 .CreatorPanel {
+  display: grid;
+  grid-template-columns: auto auto;
   grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 3;
   background-color: lightcoral;
   border: solid coral 1px;
 }
 
 .PartsBoard {
   border: solid coral 1px;
+  background-color: white;
+  grid-column-start: 1;
+  grid-column-end: 2;
+
 }
 
-#partsContainer {
-  height: 700px;
-}
-
-#partsheader {
+.header {
   text-align: center;
+  width: 100%;
 }
+
+.StylesBoard {
+  background-color: yellow;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+
+/* buttons */
+
+.PartsList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  background-color: mediumspringgreen;
+}
+
+.Part {
+  width: 100px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: white;
+  border: solid coral 1px;
+  margin: 10px;
+}
+
+.StylesList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  background-color: violet;
+}
+
+.Style {
+  width: 100px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: white;
+  border: solid coral 1px;
+  margin: 10px
+}
+
+/* display panel */
 
 .DisplayPanel {
-  grid-column-start: 2;
-  grid-column-end: 5;
+  grid-column-start: 3;
+  grid-column-end: 6;
   background-color: lightseagreen;
   border: solid 1px seagreen;
   display: flex;
@@ -126,22 +176,4 @@ h1 {
 img {
   max-width: 80%;
   height: auto;
-}
-
-/* buttons */
-
-.PartsList {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-}
-
-.Part {
-  width: 100px;
-  height: 50px;
-  border-radius: 25px;
-  background-color: white;
-  border: solid coral 1px;
 }

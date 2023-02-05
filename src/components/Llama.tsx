@@ -8,20 +8,30 @@ import Mouth from "./Mouth";
 import Neck from "./Neck";
 import Nose from "./Nose";
 
+export interface Props {
+  accessory: string;
+  background: string;
+  hair: string;
+  ears: string;
+  eyes: string;
+  mouth: string;
+  neck: string;
+  leg: string; 
+}
 
-function Llama() {
+function Llama({accessory, hair, ears, eyes, mouth, neck, leg, background}: Props) {
   return (
     <div className="Llama">
        
-        <Accessory />
-        <Hair />
-        <Ears />
-        <Eyes />
+        <Accessory accessory={accessory}/>
+        <Hair hair={hair}/>
+        <Ears ears={ears} />
+        <Eyes eyes={eyes}/>
         <Nose />
-        <Mouth />
-        <Neck />
-        <Leg /> 
-        <Background />
+        <Mouth mouth={mouth}/>
+        <Neck neck={neck}/>
+        <Leg leg={leg}/> 
+        <Background background={background}/>
     </div>
   )
 }

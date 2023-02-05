@@ -1,11 +1,11 @@
-import defaultears from '../images/ears/default.png';
-import forwardears from '../images/ears/tilt-forward.png';
-import backwardears from '../images/ears/tilt-backward.png';
+export interface Props {
+  ears: string;
+}
 
-function Ears() {
+function Ears({ears}: Props) {
   return (
     <div className="Ears">
-      <img className="ears_image" src={defaultears} alt="ears" />
+      <img className="ears_image" src={ears} alt="ears" />
     </div>
   )
 }

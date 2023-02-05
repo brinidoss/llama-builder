@@ -1,15 +1,11 @@
-import defaulteyes from '../images/eyes/default.png';
-import angry from '../images/eyes/angry.png';
-import naughty from '../images/eyes/naughty.png';
-import panda from '../images/eyes/panda.png';
-import smart from '../images/eyes/smart.png';
-import star from '../images/eyes/star.png';
+export interface Props {
+  eyes: string;
+}
 
-
-function Eyes() {
+function Eyes({eyes}: Props) {
   return (
     <div className="Eyes">
-      <img className="eyes_image" src={defaulteyes} alt="eyes" />
+      <img className="eyes_image" src={eyes} alt="eyes" />
     </div>
   )
 }

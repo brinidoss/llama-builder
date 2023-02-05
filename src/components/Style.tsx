@@ -1,12 +1,12 @@
 
   export interface Props {
     style: string;
+    selectStyle: () => void;
   }
 
-function Style({style}: Props) {
-
+function Style({style, selectStyle}: Props) {
   return (
-    <button className="Style">{style}</button>
+    <button onClick={selectStyle} className="Style">{style}</button>
   )
 }
 

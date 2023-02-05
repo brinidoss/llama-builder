@@ -1,14 +1,11 @@
-import defaultmouth from '../images/mouth/default.png';
-import astonished from '../images/mouth/astonished.png';
-import eating from '../images/mouth/eating.png';
-import laugh from '../images/mouth/laugh.png';
-import tongue from '../images/mouth/tongue.png';
+export interface Props {
+  mouth: string; 
+}
 
-
-function Mouth() {
+function Mouth({mouth}: Props) {
   return (
     <div className="Mouth">
-      <img className="mouth_image" src={defaultmouth} alt="mouth" />
+      <img className="mouth_image" src={mouth} alt="mouth" />
     </div>
   )
 }
